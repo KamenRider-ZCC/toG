@@ -1,0 +1,151 @@
+/* 轮播图 */
+.carousel-item img {
+    height: 294px;
+}
+
+/* 搜索框 */
+.input-group {
+    box-sizing: border-box;
+}
+
+.input-group-append .btn {
+    width: 210px;
+}
+
+/* 标签 */
+#myTab {
+    padding: 0 30px;
+}
+
+#myTabContent {
+    padding: 20px 30px;
+}
+
+#myTab .nav-item .active {
+    background: rgb(232, 62, 24);
+    color: #fff;
+}
+
+/* 选择条件 */
+.condition_panel {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgb(187, 187, 187);
+    position: relative;
+}
+
+.post_want {
+    position: absolute;
+    top: -75px;
+    right: 75px;
+    width: 150px;
+    height: 150px;
+    border: 1px solid rgb(187, 187, 187);
+    border-radius: 50%;
+    box-shadow: rgb(0 0 0 / 40%) 0px 2px 6px 0px;
+    background-color: #fff;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.condition_panel .condition {
+    display: flex;
+    border: 1px solid rgb(187, 187, 187);
+    border-bottom: none;
+}
+
+.condition_panel .condition .type {
+    width: 156px;
+    height: 57px;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: bold;
+    background: rgb(238, 238, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.condition_panel .condition .chooses {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    border-left: 1px solid rgb(187, 187, 187);
+}
+
+.condition_panel .condition .chooses .option {
+    margin-left: 50px;
+}
+
+/* 培训方式 */
+.sort_type {
+    display: flex;
+}
+
+.sort_type .sort {
+    margin-right: 100px;
+    cursor: pointer;
+}
+
+.sort_type .sort.active {
+    font-weight: 700;
+    color: rgba(232, 62, 24, 1);
+    text-decoration: underline;
+}
+
+/* 卡片 */
+.card_list .top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.card_list .card {
+    padding: 20px 50px;
+}
+
+.card_list .name {
+    display: flex;
+    align-items: center;
+}
+
+.card_list .avator {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 40px;
+}
+
+.card_detail_value {
+    color: #06f;
+}
+
+/* 表单 */
+.form_card {
+    padding: 20px 50px;
+}
+
+.form_card .form-group {
+    box-sizing: border-box;
+}
+
+.area_selects {
+    padding: 0 15px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+/* 详情 */
+.card_item_label {
+    display: inline-block;
+    width: 120px;
+    text-align: left;
+}

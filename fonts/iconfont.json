@@ -1,0 +1,72 @@
+{
+  "id": "3483789",
+  "name": "ToG区域平台",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "13075035",
+      "name": "粘贴",
+      "font_class": "niantie",
+      "unicode": "e631",
+      "unicode_decimal": 58929
+    },
+    {
+      "icon_id": "28520716",
+      "name": "发运地址申请流程-01",
+      "font_class": "fayundizhishenqingliucheng-01",
+      "unicode": "e998",
+      "unicode_decimal": 59800
+    },
+    {
+      "icon_id": "14966522",
+      "name": "快递物流",
+      "font_class": "kuaidiwuliu",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "1029233",
+      "name": "叉叉",
+      "font_class": "cancel-1-copy",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "705695",
+      "name": "眼睛",
+      "font_class": "yanjing",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "630095",
+      "name": "向左箭头",
+      "font_class": "xiangzuojiantou",
+      "unicode": "e660",
+      "unicode_decimal": 58976
+    },
+    {
+      "icon_id": "630094",
+      "name": "向右箭头",
+      "font_class": "xiangyoujiantou",
+      "unicode": "e65f",
+      "unicode_decimal": 58975
+    },
+    {
+      "icon_id": "201571",
+      "name": "3.1-搜索",
+      "font_class": "31sousuo",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "5328302",
+      "name": "63-向下箭头",
+      "font_class": "-xiangxiajiantou",
+      "unicode": "e736",
+      "unicode_decimal": 59190
+    }
+  ]
+}
