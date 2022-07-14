@@ -10,6 +10,7 @@
 
 /* 搜索框 */
 .session_in {
+    position: relative;
     width: 100%;
     padding: 105px 0 21px;
     background: #fff;
@@ -315,10 +316,17 @@
     margin-right: 117px;
     color: #999999;
     margin-top: 12px;
+    display: flex;
+    align-items: center;
 }
 
 .demand_detail .demand_detail_item span {
     color: #333333;
+}
+
+.demand_detail .demand_detail_item .icon {
+    margin-left: 10px;
+    cursor: pointer;
 }
 
 .demand_btn {
@@ -343,20 +351,11 @@
     cursor: pointer;
 }
 
-/* 表单 */
-.form_card {
-    padding: 20px 50px;
+/* 地图 */
+#map {
+    height: 500px;
 }
 
-.form_card .form-group {
-    box-sizing: border-box;
-}
-
-.area_selects {
-    padding: 0 15px;
-}
-
-.buttons {
-    display: flex;
-    justify-content: center;
+#map .anchorBL {
+    display: none;
 }

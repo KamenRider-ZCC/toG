@@ -13,10 +13,6 @@ a:hover {
     text-decoration: none;
 }
 
-.wrapper {
-    padding-top: 60px;
-}
-
 .width_1200 {
     width: 1200px;
     margin: 0 auto;
@@ -31,7 +27,7 @@ a:hover {
     transition: width .28s;
     border-bottom: 1px solid #f1f1f1;
     background: #fff;
-    position: fixed;
+    position: sticky;
 }
 
 .fixed_header {
@@ -443,7 +439,8 @@ a:hover {
 
 /*-------------------------------------- 弹窗 ----------------------------------------*/
 .modal_wrap .modal-dialog {
-    margin-top: 24vh;
+    margin-top: 12vh;
+    margin-bottom: 12vh;
     box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.27);
 }
 
@@ -460,14 +457,41 @@ a:hover {
     color: #333333;
 }
 
+/* 中部 */
+.modal_wrap .modal-body {
+    padding: 0;
+}
+
+.modal_wrap .modal-body .modal-body-form {
+    padding: 1rem 2.5rem;
+}
+
+.modal_wrap .modal-body .modal-body-form .form-group label span {
+    color: #FE0505;
+    font-size: 18px;
+    width: 14px;
+    height: 18px;
+    line-height: 18px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+.modal_wrap .modal-body .modal-body-form .form-group .help-block {
+    color: red;
+    margin-left: 180px;
+    margin-top: 4px;
+}
+
+
 /* 底部 */
 .modal_wrap .modal-footer {
     justify-content: center;
-    border-top: 0;
     padding-bottom: 3rem;
+    border-top: 0;
 }
 
-.modal_wrap .modal-footer .btn {
+.modal_wrap .modal-footer button {
     width: 120px;
     height: 40px;
     padding: 0;
@@ -483,26 +507,6 @@ a:hover {
 .modal_wrap .modal-footer .btn:nth-of-type(2) {
     color: #666666;
     background: #F0F0F0;
-}
-
-/* 中部 */
-.modal_wrap .modal-body {
-    padding: 0;
-}
-
-.modal_wrap .modal-body .modal-body-form {
-    padding: 1rem 2.5rem;
-}
-
-.modal_wrap .modal-body .form-group label span {
-    color: #FE0505;
-    font-size: 18px;
-    width: 14px;
-    height: 18px;
-    line-height: 18px;
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 4px;
 }
 
 /*-------------------------------------- 面包屑导航 ----------------------------------------*/
