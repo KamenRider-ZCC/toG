@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>共享运维</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.39.0/css/tempusdominus-bootstrap-4.min.css"
+        integrity="sha512-3JRrEUwaCkFUBLK1N8HehwQgu8e23jTH4np5NHOmQOobuC4ROQxFwFgBLTnhcnQRMs84muMh0PnnwXlPq5MGjg=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/common.css" />
+    <link rel="stylesheet" href="./form.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="fixed_header_wrap">
+            <div class="fixed_header">
+                <div class="navbar">
+                    <img src="/img/logo_title.png">
+                    <ul>
+                        <li class="el-submenu">
+                            应用服务<i class="iconfont icon--xiangxiajiantou"></i>
+                        </li>
+                        <li class="el-submenu">
+                            解决方案<i class="iconfont icon--xiangxiajiantou"></i>
+                        </li>
+                        <li class="el-menu-item">工业MALL</li>
+                        <li class="el-menu-item">生态社区</li>
+                        <li class="el-menu-item">新闻资讯</li>
+                        <li class="el-menu-item">开发者</li>
+                        <li class="el-menu-item">关于我们</li>
+                    </ul>
+                    <div style="display: flex; flex-grow: 1;"></div>
+                    <div class="search">
+                        <i class="iconfont icon-31sousuo"></i>
+                        <input type="text" autocomplete="off" placeholder="搜索">
+                    </div>
+                    <div class="btn_group">
+                        <a href="">登录</a>
+                        <a href="">用户注册</a>
+                    </div>
+                </div>
+                <div class="nav_box">
+                    <div class="service">
+                        <div class="service_in clearfix">
+                            <div class="aside">
+                                <ul>
+                                    <li class="is_active">政府应用服务</li>
+                                    <li>产业应用服务</li>
+                                    <li>企业应该服务</li>
+                                </ul>
+                            </div>
+                            <div class="content">
+                                <div class="tab_box is_active_box">
+                                    <div class="tab">
+                                        <h5>经济态势</h5>
+                                        <ul>
+                                            <li><a href="http://103.36.192.87:10025/#/board_out">区域概览<i
+                                                        class="iconfont icon-xiangyoujiantou"></i></a></li>
+                                            <li><a href="">产业地图<i class="iconfont icon-xiangyoujiantou"></i></a></li>
+                                            <li><a href="">产业指标监测<i class="iconfont icon-xiangyoujiantou"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab">
+                                        <h5>环保平台</h5>
+                                        <ul>
+                                            <li><a href="http://111.23.173.10:18886">污染溯源<i
+                                                        class="iconfont icon-xiangyoujiantou"></i></a></li>
+                                            <li><a href="http://111.23.173.10:18887">视频监控<i
+                                                        class="iconfont icon-xiangyoujiantou"></i></a></li>
+                                            <li><a href="http://111.23.173.10:18884">一企一管<i
+                                                        class="iconfont icon-xiangyoujiantou"></i></a></li>
+                                            <li><a href="http://111.23.173.10:18885">大屏管理<i
+                                                        class="iconfont icon-xiangyoujiantou"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab">
+                                        <h5>安监平台</h5>
+                                        <ul>
+                                            <li><a href="http://47.105.78.207:8084/video-insight/">物联数据采集<i
+                                                        class="iconfont icon-xiangyoujiantou"></i></a></li>
+                                            <li><a href="http://47.105.78.207:8083/">大数据分析<i
+                                                        class="iconfont icon-xiangyoujiantou"></i></a></li>
+                                            <li><a href="http://47.105.78.207:8081/council-service-manage/">安委会管理<i
+                                                        class="iconfont icon-xiangyoujiantou"></i></a></li>
+                                            <li><a href="http://47.105.78.207:8081/daily-supervision-manage/">日常监管<i
+                                                        class="iconfont icon-xiangyoujiantou"></i></a></li>
+                                            <li><a href="http://47.105.78.207:8085/knowledge-service-manage/">知识库<i
+                                                        class="iconfont icon-xiangyoujiantou"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab">
+                                        <h5><a href="http://218.90.150.118:10088">智慧招商平台<i
+                                                    class="iconfont icon-xiangyoujiantou"></i></a></h5>
+                                        <h5><a href="">政企互动平台<i class="iconfont icon-xiangyoujiantou"></i></a></h5>
+                                        <h5><a href="">政策资讯平台<i class="iconfont icon-xiangyoujiantou"></i></a></h5>
+                                        <h5><a href="http://218.90.150.118:16007">项目申报平台<i
+                                                    class="iconfont icon-xiangyoujiantou"></i></a></h5>
+                                    </div>
+                                </div>
+                                <div class="tab_box">
+                                    <div class="tab">
+                                        <h5>产业链</h5>
+                                        <ul>
+                                            <li><a href="http://zzj.bjdv.com:8088/p/govLogin">产业链管理后台<i
+                                                        class="iconfont icon-xiangyoujiantou"></i></a></li>
+                                            <li><a href="">供需对接平台<i class="iconfont icon-xiangyoujiantou"></i></a></li>
+                                            <li><a href="">产业协同平台<i class="iconfont icon-xiangyoujiantou"></i></a></li>
+                                            <li><a href="">供应链金融平台<i class="iconfont icon-xiangyoujiantou"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tab_box">
+                                    <div class="tab">
+                                        <h5>企业服务平台</h5>
+                                        <ul>
+                                            <li><a href="http://103.36.192.87:10025/">企业上云服务平台<i
+                                                        class="iconfont icon-xiangyoujiantou"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab">
+                                        <h5>创新应用</h5>
+                                        <ul>
+                                            <li><a href="http://192.168.60.221:13005/">IOT+MES<i
+                                                        class="iconfont icon-xiangyoujiantou"></i></a></li>
+                                            <li><a href="http://124.207.254.168:3004/">IOT+节能+云客服<i
+                                                        class="iconfont icon-xiangyoujiantou"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab">
+                                        <h5>云应用平台</h5>
+                                        <ul>
+                                            <li><a href="http://datangiot.cn:9003/pages/login.jsp">协同营销<i
+                                                        class="iconfont icon-xiangyoujiantou"></i></a></li>
+                                            <li><a href="http://datangiot.cn:9012/Windchill/app">智能设计<i
+                                                        class="iconfont icon-xiangyoujiantou"></i></a></li>
+                                            <li><a href="http://datangiot.cn:9020/hx-semes/login.jsp">智能制造<i
+                                                        class="iconfont icon-xiangyoujiantou"></i></a></li>
+                                            <li><a href="http://datangiot.cn:9005/#/login">IOT<i
+                                                        class="iconfont icon-xiangyoujiantou"></i></a></li>
+                                            <li><a href="http://113.57.86.223:9906/#/login">TMS<i
+                                                        class="iconfont icon-xiangyoujiantou"></i></a></li>
+                                            <li><a href="http://113.57.86.223:9906/#/login">WMS<i
+                                                        class="iconfont icon-xiangyoujiantou"></i></a></li>
+                                            <li><a href="http://datangiot.cn:9018/bim#/login">智能运维<i
+                                                        class="iconfont icon-xiangyoujiantou"></i></a></li>
+                                            <li><a href="http://datangiot.cn:9010/SmartEye/home/login.do">数据分析<i
+                                                        class="iconfont icon-xiangyoujiantou"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav_box">
+                    <div class="scheme">
+                        <div class="scheme_in">
+                            <h4>行业解决方案</h4>
+                            <div class="nav clearfix">
+                                <div class="nav_in">
+                                    <h5>流程型行业</h5>
+                                    <p></p>
+                                    <ul>
+                                        <li><a href="">稀土永磁</a></li>
+                                        <li><a href="">光伏行业</a></li>
+                                        <li><a href="">汽车配件行业</a></li>
+                                        <li><a href="">水泥行业</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav_in">
+                                    <h5>离散型行业</h5>
+                                    <p></p>
+                                    <ul>
+                                        <li><a href="">纺织行业</a></li>
+                                        <li><a href="">服装加工行业</a></li>
+                                        <li><a href="">机加工行业</a></li>
+                                        <li><a href="">水泵行业</a></li>
+                                        <li><a href="">成型行业</a></li>
+                                        <li><a href="">阀门制造行业</a></li>
+                                        <li><a href="">装备制造</a></li>
+                                        <li><a href="">电器行业</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="width_1200">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb storage_breadcrumb">
+                    <li class="breadcrumb-item"><a href="./index.html">首页</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">发布需求</li>
+                </ol>
+            </nav>
+            <div class="card form_card">
+                <ul class="nav nav-pills justify-content-center" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="needs-tab" data-toggle="tab" href="#needs" role="tab"
+                            aria-controls="needs" aria-selected="false">我有需求</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="service-tab" data-toggle="tab" href="#service" role="tab"
+                            aria-controls="service" aria-selected="false">我有服务</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="needs" role="tabpanel" aria-labelledby="needs-tab">
+                        <form id="needs_form">
+                            <div class="form-item form-group">
+                                <label for="needs_title"><span>*</span>标题</label>
+                                <input class="form-control form-flex1" id="needs_title" name="needs_title"
+                                    data-bv-notempty="true" placeholder="请输入需求名称">
+                            </div>
+                            <div class="form-item form-group">
+                                <label for="needs_description"><span>*</span>需求描述</label>
+                                <textarea class="form-control form-flex1" id="needs_description"
+                                    name="needs_description" data-bv-notempty="true" placeholder="请详细写明您需求"
+                                    rows="3"></textarea>
+                            </div>
+                            <div class="form-item form-group">
+                                <label for="needs_contact"><span>*</span>联系人</label>
+                                <input class="form-control form-flex1" id="needs_contact" name="needs_contact"
+                                    data-bv-notempty="true" placeholder="请输入姓名">
+                            </div>
+                            <div class="form-item form-group">
+                                <label for="needs_phone"><span>*</span>联系方式</label>
+                                <input class="form-control form-flex1" id="needs_phone" name="needs_phone"
+                                    data-bv-notempty="true" placeholder="请输入联系方式">
+                            </div>
+                            <div class="form-item form-group">
+                                <label for="needs_ability"><span>*</span>运维能力</label>
+                                <input class="form-control form-flex1" id="needs_ability" name="needs_ability"
+                                    data-bv-notempty="true" placeholder="请输入能力">
+                            </div>
+                            <div class="form-item form-group">
+                                <label for="needs_price"><span>*</span>价格</label>
+                                <div class="input-group form-flex1">
+                                    <input class="form-control" id="needs_price" name="needs_price"
+                                        data-bv-notempty="true" placeholder="请输入价格">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">元</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item form-group">
+                                <label for="needs_remark"><span></span>备注</label>
+                                <textarea class="form-control form-flex1" id="needs_remark" placeholder="请输入备注"
+                                    rows="3"></textarea>
+                            </div>
+                            <div class="buttons">
+                                <button onclick="submitNeeds()" type="button" class="btn btn-danger">需求提交</button>
+                                <button type="button" class="btn btn-light">取消</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="tab-pane fade" id="service" role="tabpanel" aria-labelledby="service-tab">
+                        <form id="service_form">
+                            <div class="form-item form-group">
+                                <label for="title"><span>*</span>标题</label>
+                                <input class="form-control form-flex1" id="title" name="title" data-bv-notempty="true"
+                                    placeholder="请输入需求名称">
+                            </div>
+                            <div class="form-item form-group">
+                                <label for="description"><span>*</span>服务描述</label>
+                                <textarea class="form-control form-flex1" id="description" name="description"
+                                    data-bv-notempty="true" placeholder="请详细写明您需求" rows="3"></textarea>
+                            </div>
+                            <div class="form-item form-group">
+                                <label for="contact"><span>*</span>联系人</label>
+                                <input class="form-control form-flex1" id="contact" name="contact"
+                                    data-bv-notempty="true" placeholder="请输入姓名">
+                            </div>
+                            <div class="form-item form-group">
+                                <label for="phone"><span>*</span>联系方式</label>
+                                <input class="form-control form-flex1" id="phone" name="phone" data-bv-notempty="true"
+                                    placeholder="请输入联系方式">
+                            </div>
+                            <div class="form-item form-group">
+                                <label for="size"><span>*</span>面积</label>
+                                <div class="input-group form-flex1">
+                                    <input class="form-control" id="size" name="size" data-bv-notempty="true"
+                                        placeholder="请输入面积">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">平方米</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item form-group">
+                                <label for="price"><span>*</span>价格</label>
+                                <div class="input-group form-flex1">
+                                    <input class="form-control" id="price" name="price" data-bv-notempty="true"
+                                        placeholder="请输入价格">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">元</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item form-group">
+                                <label for="city"><span>*</span>区域</label>
+                                <div class="form-flex1 form-options-two">
+                                    <select class="form-control form-flex1" id="city" name="city"
+                                        data-bv-notempty="true">
+                                        <option>市</option>
+                                    </select>
+                                    <select class="form-control form-flex1" id="zone" name="zone"
+                                        data-bv-notempty="true" style="margin-left: 18px;">
+                                        <option>区</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-item form-group">
+                                <label for="serviceAddress"><span>*</span>具体地址</label>
+                                <input class="form-control form-flex1" id="serviceAddress" name="serviceAddress"
+                                    data-bv-notempty="true" placeholder="单行输入">
+                            </div>
+                            <div class="form-item form-group">
+                                <label for="serviceType"><span>*</span>类型</label>
+                                <select class="form-control form-flex1" id="serviceType">
+                                    <option>全部</option>
+                                </select>
+                            </div>
+                            <div class="form-item form-group">
+                                <label for="datetimepicker1"><span>*</span>使用时间</label>
+                                <div class="form-flex1 form-options-two">
+                                    <div class="input-group date form-flex1" id="datetimepicker1"
+                                        data-target-input="nearest">
+                                        <input type="text" class="form-control datetimepicker-input"
+                                            data-target="#datetimepicker1" name="datetimepicker1"
+                                            data-bv-notempty="true" />
+                                        <div class="input-group-append" data-target="#datetimepicker1"
+                                            data-toggle="datetimepicker">
+                                            <div class="input-group-text">📅</div>
+                                        </div>
+                                    </div>
+                                    至
+                                    <div class="input-group date form-flex1" id="datetimepicker2"
+                                        data-target-input="nearest">
+                                        <input type="text" class="form-control datetimepicker-input"
+                                            data-target="#datetimepicker2" name="datetimepicker2"
+                                            data-bv-notempty="true" />
+                                        <div class="input-group-append" data-target="#datetimepicker2"
+                                            data-toggle="datetimepicker">
+                                            <div class="input-group-text">📅</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item form-group">
+                                <label for="remark"><span></span>备注</label>
+                                <textarea class="form-control form-flex1" id="remark" placeholder="请输入备注"
+                                    rows="3"></textarea>
+                            </div>
+                            <div class="buttons">
+                                <button onclick="submitService()" type="button" class="btn btn-danger">需求提交</button>
+                                <button type="button" class="btn btn-light">取消</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_wrap">
+            <div class="footer_main">
+                <div class="footer_box clearfix">
+                    <div class="left_box">
+                        <img src="/img/foot_logo.png">
+                        <p>邮政编码：214100</p>
+                        <p>公司网址：http://www.bjdv.com</p>
+                        <p>邮政编码：联系电话：0510-81891629</p>
+                        <p>联系地址：无锡市惠山区智慧路18号O-park大厦2层</p>
+                    </div>
+                    <div class="right_box clearfix">
+                        <div>
+                            <p class="foot_title">快速入口</p>
+                            <p class="foot_light">生态社区</p>
+                            <p class="foot_light">工业Mall</p>
+                            <p class="foot_light">开发者</p>
+                            <p class="foot_light">关于我们</p>
+                        </div>
+                        <div>
+                            <p class="foot_title">应用服务</p>
+                            <p class="foot_light foot_height">
+                                <a href="http://datangiot.cn:9005/#/login" target="_blank">IOT物联平台</a>
+                            </p>
+                            <p class="foot_light foot_height">
+                                <a href="http://103.36.192.87:10025/" target="_blank">企业上云平台</a>
+                            </p>
+                            <p class="foot_light foot_height">
+                                <a href="http://192.168.60.221:13005/" target="_blank">云MES平台</a>
+                            </p>
+                        </div>
+                        <div>
+                            <p class="foot_title">新闻资讯</p>
+                            <p class="foot_light foot_height">政策速递</p>
+                            <p class="foot_light foot_height">行业新闻</p>
+                            <p class="foot_light foot_height">行业标准</p>
+                        </div>
+                        <div>
+                            <p class="foot_title">微信公众号</p>
+                            <img src="/img/foot_QR.png" width="120" height="120">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="footer_link">
+                    <div class="foot_line">
+                        <div>
+                            <p class="foot_title">友情链接</p>
+                        </div>
+                        <div>
+                            <p class="foot_light"><a href="https://www.datang.com/" target="_blank">大唐电信</a></p>
+                            <p class="foot_light"><a href="https://www.gohigh.com.cn/" target="_blank">大唐高鸿</a></p>
+                            <p class="foot_light"><a href="http://www.hrtn.net/" target="_blank">湖北广电</a></p>
+                            <p class="foot_light"><a href="http://www.jishimedia.com/" target="_blank">吉视传媒</a></p>
+                            <p class="foot_light"><a href="https://new.siemens.com/cn/zh.html" target="_blank">西门子</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_copyright">
+                    <p>Copyright 2008-2010 大唐融合物联科技无锡有限公司 京ICP备05042180号-1</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap-validator/0.5.3/js/bootstrapValidator.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.0/moment.min.js"></script>
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.39.0/js/tempusdominus-bootstrap-4.min.js"
+    integrity="sha512-k6/Bkb8Fxf/c1Tkyl39yJwcOZ1P4cRrJu77p83zJjN2Z55prbFHxPs9vN7q3l3+tSMGPDdoH51AEU8Vgo1cgAA=="
+    crossorigin="anonymous"></script>
+<script src="/js/common.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $('#datetimepicker1').datetimepicker({
+            format: 'YYYY-MM-DD'
+        });
+        $('#datetimepicker2').datetimepicker({
+            format: 'YYYY-MM-DD'
+        });
+    })
+    // 初始化表单验证
+    $(document).ready(function () {
+        needsFormValidator()
+        serviceFormValidator()
+    })
+
+    // 提交表单
+    function submitNeeds() {
+        $('#needs_form').data('bootstrapValidator').validate()
+        if (!$('#needs_form').data('bootstrapValidator').isValid()) {
+            return
+        }
+        console.log('发起Ajax请求！！')
+    }
+
+    function submitService() {
+        $('#service_form').data('bootstrapValidator').validate()
+        if (!$('#service_form').data('bootstrapValidator').isValid()) {
+            return
+        }
+        console.log('发起Ajax请求！！')
+    }
+    // Modal验证销毁重构
+    $('#serviceModal').on('hidden.bs.modal', function () {
+        $("#needs_form").data('bootstrapValidator').destroy()
+        $('#needs_form').data('bootstrapValidator', null)
+        document.getElementById("needs_form").reset()
+        needsFormValidator()
+    })
+
+    // Form验证规则
+    function needsFormValidator() {
+        $('#needs_form').bootstrapValidator({
+            message: 'This value is not valid',
+            feedbackIcons: {
+                valid: 'glyphicon glyphicon-ok',
+                invalid: 'glyphicon glyphicon-remove',
+                validating: 'glyphicon glyphicon-refresh'
+            },
+            fields: {
+                // 标题
+                needs_title: {
+                    message: '标题验证失败',
+                    validators: {
+                        notEmpty: {
+                            message: '标题不能为空'
+                        },
+                    }
+                },
+                // 需求描述
+                needs_description: {
+                    message: '需求描述验证失败',
+                    validators: {
+                        notEmpty: {
+                            message: '需求描述不能为空'
+                        },
+                    }
+                },
+                // 联系人
+                needs_contact: {
+                    message: '联系人验证失败',
+                    validators: {
+                        notEmpty: {
+                            message: '联系人不能为空'
+                        },
+                    }
+                },
+                // 联系方式
+                needs_phone: {
+                    message: '联系方式验证失败',
+                    validators: {
+                        notEmpty: {
+                            message: '联系方式不能为空'
+                        },
+                    }
+                },
+                // 运维能力
+                needs_ability: {
+                    message: '运维能力验证失败',
+                    validators: {
+                        notEmpty: {
+                            message: '运维能力不能为空'
+                        },
+                    }
+                },
+                // 价格
+                needs_price: {
+                    message: '价格验证失败',
+                    validators: {
+                        notEmpty: {
+                            message: '价格不能为空'
+                        },
+                    }
+                },
+            }
+        })
+    }
+
+    function serviceFormValidator() {
+        $('#service_form').bootstrapValidator({
+            message: 'This value is not valid',
+            feedbackIcons: {
+                valid: 'glyphicon glyphicon-ok',
+                invalid: 'glyphicon glyphicon-remove',
+                validating: 'glyphicon glyphicon-refresh'
+            },
+            fields: {
+                // 标题
+                title: {
+                    message: '标题验证失败',
+                    validators: {
+                        notEmpty: {
+                            message: '标题不能为空'
+                        },
+                    }
+                },
+                // 需求描述
+                description: {
+                    message: '需求描述验证失败',
+                    validators: {
+                        notEmpty: {
+                            message: '需求描述不能为空'
+                        },
+                    }
+                },
+                // 联系人
+                contact: {
+                    message: '联系人验证失败',
+                    validators: {
+                        notEmpty: {
+                            message: '联系人不能为空'
+                        },
+                    }
+                },
+                // 联系方式
+                phone: {
+                    message: '联系方式验证失败',
+                    validators: {
+                        notEmpty: {
+                            message: '联系方式不能为空'
+                        },
+                    }
+                },
+                // 面积
+                size: {
+                    message: '面积验证失败',
+                    validators: {
+                        notEmpty: {
+                            message: '面积不能为空'
+                        },
+                    }
+                },
+                // 价格
+                price: {
+                    message: '价格验证失败',
+                    validators: {
+                        notEmpty: {
+                            message: '价格不能为空'
+                        },
+                    }
+                },
+                // 市
+                city: {
+                    message: '市验证失败',
+                    validators: {
+                        notEmpty: {
+                            message: '市不能为空'
+                        },
+                    }
+                },
+                // 区
+                zone: {
+                    message: '区验证失败',
+                    validators: {
+                        notEmpty: {
+                            message: '区不能为空'
+                        },
+                    }
+                },
+                // 具体地址
+                serviceAddress: {
+                    message: '具体地址验证失败',
+                    validators: {
+                        notEmpty: {
+                            message: '具体地址不能为空'
+                        },
+                    }
+                },
+                // 类型
+                serviceType: {
+                    message: '类型验证失败',
+                    validators: {
+                        notEmpty: {
+                            message: '类型不能为空'
+                        },
+                    }
+                },
+                // 使用时间
+                datetimepicker1: {
+                    message: '开始时间验证失败',
+                    validators: {
+                        notEmpty: {
+                            message: '开始时间不能为空'
+                        },
+                    }
+                },
+                // 使用时间
+                datetimepicker2: {
+                    message: '结束时间验证失败',
+                    validators: {
+                        notEmpty: {
+                            message: '结束时间不能为空'
+                        },
+                    }
+                }
+            }
+        })
+    }
+</script>
+
+</html>

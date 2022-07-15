@@ -1,0 +1,116 @@
+/* 卡片 */
+.storage_breadcrumb {
+    margin: 46px 0 12px;
+}
+
+.serve_card {
+    font-size: 14px;
+    margin-bottom: 46px;
+}
+
+.serve_card_head {
+    padding: 30px 0 30px 30px;
+}
+
+.serve_card_head .title {
+    font-size: 27px;
+    font-family: MicrosoftYaHei-Bold, MicrosoftYaHei;
+    font-weight: bold;
+    color: #333333;
+}
+
+.serve_card .serve_card_head .top {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    color: #333333;
+    font-size: 12px;
+}
+
+.serve_card .serve_card_head .top .time {
+    color: #999999;
+    margin-left: 27px;
+}
+
+.serve_card .avator {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.serve_card .company {
+    color: #333333;
+}
+
+.serve_card .card_body {
+    margin: 0px 30px;
+    padding: 30px 0;
+    border-top: 1px dashed #979797;
+    border-bottom: 1px dashed #979797;
+}
+
+.serve_card .card_body .detail_item {
+    font-size: 15px;
+    font-family: MicrosoftYaHei;
+    display: flex;
+}
+
+.detail_item+.detail_item {
+    margin-top: 24px;
+}
+
+.serve_card .card_body .detail_item .title {
+    width: 77px;
+    color: #666666;
+}
+
+.serve_card .card_body .detail_item .content {
+    color: #333333;
+    margin-left: 15px;
+}
+
+.demand_btn {
+    padding: 32px 0 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.serve_btn {
+    width: 139px;
+    height: 46px;
+    background: #D80E19;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-family: MicrosoftYaHei;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+/* ================================ 营销专区-弹窗 ================================*/
+.modal_btn {
+    bottom: 10vh;
+    left: 90vw;
+    position: fixed;
+    display: inline-block;
+}
+
+.modal_btn button {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    box-shadow: 1px 3px 5px 2px rgba(0, 0, 0, 0.15);
+    background: #D80E19;
+    color: #FFF;
+}
+
+.modal_btn button:hover {
+    color: #FFF;
+}
+
+.modal_wrap .modal-body-form .col-form-label {
+    font-weight: bold;
+}

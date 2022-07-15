@@ -1,0 +1,85 @@
+.storage_breadcrumb {
+    margin: 46px 0 12px;
+}
+
+.form_card {
+    padding: 46px 258px 85px;
+    margin-bottom: 46px;
+}
+
+.form_card .nav .nav-link {
+    background: #D80E19;
+    color: #fff;
+}
+
+.nav-item+.nav-item {
+    margin-left: 10px;
+}
+
+.form_card .nav .nav-link.active {
+    background: #fff;
+    color: #D80E19;
+    border: 1px solid #D80E19;
+}
+
+#myTab {
+    margin-bottom: 37px;
+}
+
+.buttons {
+    margin-top: 54px;
+    display: flex;
+    justify-content: center;
+}
+
+.buttons .btn {
+    width: 114px;
+    height: 46px;
+    border-radius: 4px;
+}
+
+.buttons .btn.btn-light {
+    margin-left: 40px;
+}
+
+.form-item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-item+.form-item {
+    margin-top: 15px;
+}
+
+.form-item label {
+    display: inline-block;
+    width: 100px;
+    margin-right: 20px;
+}
+
+.form-item .form-flex1 {
+    flex: 1;
+}
+
+.form-item label span {
+    color: #FE0505;
+    font-size: 18px;
+    width: 14px;
+    height: 18px;
+    line-height: 18px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+.form-options-two {
+    display: flex;
+    align-items: center;
+}
+
+.form-item .help-block {
+    color: red;
+    width: 100%;
+    margin-left: 120px;
+    margin-top: 4px;
+}
