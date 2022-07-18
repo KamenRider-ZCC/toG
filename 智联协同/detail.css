@@ -1,0 +1,261 @@
+/* 商品详情 */
+.storage_breadcrumb {
+    margin: 46px 0 30px;
+}
+
+.product_introduction {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product_introduction img {
+    width: 424px;
+    height: 424px;
+}
+
+.product_introduction .introduction {
+    display: flex;
+    flex-direction: column;
+    width: 736px;
+    height: 424px;
+    box-sizing: border-box;
+}
+
+.product_introduction .introduction .title {
+    font-size: 22px;
+    font-family: MicrosoftYaHei-Bold, MicrosoftYaHei;
+    font-weight: bold;
+    color: #333333;
+}
+
+.product_introduction .introduction .copywrite {
+    font-size: 18px;
+    font-family: MicrosoftYaHei;
+    color: #999999;
+    margin-top: 9px;
+}
+
+.price_stock {
+    height: 102px;
+    background: linear-gradient(180deg, #FF3C51 0%, #D80E19 100%);
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    padding-left: 29px;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.price_stock .price {
+    font-size: 48px;
+    font-family: MicrosoftYaHei-Bold, MicrosoftYaHei;
+    font-weight: bold;
+}
+
+.price_stock .price span {
+    font-size: 24px;
+}
+
+.price_stock .stock {
+    position: absolute;
+    bottom: 16px;
+    right: 20px;
+    font-size: 20px;
+    font-family: MicrosoftYaHei;
+}
+
+.introduction .info {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 18px;
+    font-family: MicrosoftYaHei;
+    color: #333333;
+    margin-top: 14px;
+}
+
+.introduction .info div {
+    margin-top: 19px;
+}
+
+.introduction .info span {
+    display: inline-block;
+    font-size: 18px;
+    font-family: MicrosoftYaHei;
+    color: #999999;
+    margin-right: 12px;
+}
+
+.introduction .info .category {
+    margin-left: 172px;
+}
+
+.introduction .info .merchant {
+    display: flex;
+    align-items: center;
+}
+
+.introduction .info .merchant img {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    margin-right: 9px;
+}
+
+.intent_to_buy {
+    width: 268px;
+    height: 68px;
+    line-height: 68px;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid #D80E19;
+    margin-top: 24px;
+    font-size: 24px;
+    font-family: MicrosoftYaHei-Bold, MicrosoftYaHei;
+    font-weight: bold;
+    color: #D80E19;
+    cursor: pointer;
+}
+
+.detail_title {
+    font-size: 21px;
+    font-family: MicrosoftYaHei-Bold, MicrosoftYaHei;
+    font-weight: bold;
+    color: #333333;
+    margin-top: 44px;
+    padding-left: 13px;
+}
+
+.details_show {
+    margin-top: 13px;
+    padding: 12px 20px 85px;
+    width: 100%;
+    border: 1px solid #D8D8D8;
+    box-sizing: border-box;
+}
+
+.details_category {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 42px;
+    border-bottom: 1px solid #D8D8D8;
+}
+
+.details_category .category {
+    width: 25%;
+    font-size: 14px;
+    font-family: MicrosoftYaHei;
+    color: #333333;
+    display: flex;
+    margin-top: 15px;
+}
+
+.details_category .category .title {
+    font-size: 14px;
+    font-family: MicrosoftYaHei;
+    color: #999999;
+    display: inline-block;
+    width: 60px;
+    margin-right: 50px;
+}
+
+.detail_imgs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 84px;
+}
+
+.detail_imgs img {
+    width: 930px;
+}
+
+.detail_imgs img+img {
+    margin-top: 146px;
+}
+
+.contact_us {
+    width: 100%;
+    height: 322px;
+    margin: 38px 0;
+    padding: 25px;
+    box-sizing: border-box;
+    border: 1px solid #D8D8D8;
+}
+
+.contact_us .info_title {
+    font-size: 21px;
+    font-family: MicrosoftYaHei-Bold, MicrosoftYaHei;
+    font-weight: bold;
+    color: #333333;
+}
+
+.contact_us .info {
+    margin-top: 16px;
+    display: flex;
+}
+
+#map {
+    width: 450px;
+    height: 230px;
+}
+
+#map .anchorBL {
+    display: none;
+}
+
+.contact_details {
+    margin-left: 40px;
+}
+
+.contact_details .title {
+    font-size: 18px;
+    font-family: MicrosoftYaHei;
+    color: #333333;
+}
+
+.contact_address {
+    margin-top: 20px;
+}
+
+.contact_details .info_item {
+    font-size: 18px;
+    font-family: MicrosoftYaHei;
+    color: #666666;
+    margin-top: 10px;
+}
+
+.contact_details .info_item span {
+    width: 72px;
+    color: #999999;
+    display: inline-block;
+    margin-right: 40px;
+}
+
+#mapAddress {
+    display: inline-block;
+}
+
+/* ================================ 下单详情-弹窗 ================================*/
+.modal_btn {
+    bottom: 10vh;
+    left: 90vw;
+    position: fixed;
+    display: inline-block;
+}
+
+.modal_btn button {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    box-shadow: 1px 3px 5px 2px rgba(0, 0, 0, 0.15);
+    background: #D80E19;
+    color: #FFF;
+}
+
+.modal_btn button:hover {
+    color: #FFF;
+}
+
+.modal_wrap .modal-body-form .col-form-label {
+    font-weight: bold;
+}
