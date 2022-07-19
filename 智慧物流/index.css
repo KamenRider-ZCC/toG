@@ -1,0 +1,509 @@
+/* ================================ 首页 ================================*/
+.banner_wrap {
+    width: 100%;
+    height: 1010px;
+    position: relative;
+}
+
+.banner_wrap img {
+    width: 100%;
+    height: 100%;
+}
+
+.banner_wrap .banner_in {
+    position: absolute;
+    height: calc(100% - 480px);
+    left: 0;
+    right: 0;
+    top: 480px;
+    bottom: 0;
+    margin: auto;
+    z-index: 99;
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+}
+
+.banner_wrap .banner_in .view {
+    width: 780px;
+    height: 366px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 18px 0px rgba(243, 72, 72, 0.5);
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 30px
+}
+
+.banner_wrap .banner_in .view h3 {
+    font-size: 28px;
+    color: #333333;
+    line-height: 37px;
+    letter-spacing: 3px;
+    margin-bottom: 34px;
+    text-align: center;
+}
+
+.banner_wrap .banner_in .view .name {
+    color: #333333;
+    margin: 10px 0;
+    height: 20px;
+}
+
+.banner_wrap .banner_in .view .service {
+    height: 80px;
+    background: #D80E19;
+    border-radius: 10px;
+    /* margin-bottom: 33px; */
+    font-weight: 400;
+    font-size: 26px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.banner_wrap .banner_in .view .service span {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.banner_wrap .banner_in .view .service span i {
+    font-size: 36px;
+    margin-right: 15px;
+}
+
+/* 物流服务商 */
+.banner_wrap .banner_in .view .service .service_company {
+    position: absolute;
+    z-index: 80;
+    left: 0;
+    top: 80px;
+    width: 1200px;
+    min-height: 240px;
+    background: white;
+    box-shadow: 0px 4px 18px 0px rgb(243 72 72 / 50%);
+    border-radius: 10px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #666;
+    display: none;
+}
+
+.banner_wrap .banner_in .view .service .service_company .use {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    display: flex;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 1.6px solid #efefef;
+}
+
+.banner_wrap .banner_in .view .service .service_company .use span {
+    width: 80px;
+    height: 100%;
+    text-align: center;
+    background: orange;
+    display: inline-block;
+    color: white;
+}
+
+.banner_wrap .banner_in .view .service .service_company .use ul li {
+    float: left;
+    flex: 1;
+    padding: 0 24px
+}
+
+.banner_wrap .banner_in .view .service .service_company .use b {
+    font-weight: bolder;
+    width: 40px;
+    text-align: center;
+}
+
+.banner_wrap .banner_in .view .service .service_company .basic div {
+    height: 60px;
+}
+
+.banner_wrap .banner_in .view .service .service_company .basic div:nth-of-type(2n) {
+    background-color: #efeff4;
+}
+
+.banner_wrap .banner_in .view .service .service_company .basic div ul {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner_wrap .banner_in .view .service .service_company .basic div ul li {
+    width: 33.3333%;
+    float: left;
+    line-height: 60px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.banner_wrap .banner_in .view .service .service_company .basic div ul li em {
+    width: 10%;
+    text-align: center;
+    display: inline-block;
+    color: #1684fc;
+}
+
+.banner_wrap .banner_in .view .service .service_company .basic div ul li a {
+    width: 28%;
+    display: inline-block
+}
+
+.banner_wrap .banner_in .view .service .service_company .more {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #1684fc
+}
+
+
+
+
+
+
+
+
+
+.banner_wrap .banner_in .view .find .form-control {
+    height: 80px;
+    background: #F8F8F8;
+    font-size: 24px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.banner_wrap .banner_in .view .find input::-webkit-input-placeholder {
+    color: #C3C3C3;
+}
+
+.banner_wrap .banner_in .view .find .input-group-text {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    font-size: 28px;
+    font-weight: 400;
+    color: #FFFFFF;
+    background: #D80E19;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.banner_wrap .banner_in .view .find .input-group-text a {
+    display: flex;
+    align-items: center;
+}
+
+.banner_wrap .banner_in .view .find .input-group-text a i {
+    font-size: 34px;
+    margin-right: 12px;
+}
+
+.banner_wrap .banner_in .view p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #999999;
+    line-height: 22px;
+    margin-top: 5px;
+}
+
+.banner_wrap .banner_in .send {
+    width: 357px;
+    height: 254px;
+    margin-top: 50px;
+}
+
+.modal_wrap .modal-body {
+    padding: 10px 0 30px;
+}
+
+
+/* ================================ 详情 ================================*/
+.detail_wrap {
+    padding-top: 38px;
+    padding-bottom: 50px;
+    background-color: #F3F5F8;
+}
+
+.detail_wrap .bread_wrap {
+    margin-bottom: 28px;
+}
+
+.detail_wrap h4,
+.detail_wrap h4,
+.detail_wrap h4 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333333;
+    line-height: 28px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.detail_wrap h4 span,
+.detail_wrap h4 span,
+.detail_wrap h4 span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FF2121;
+    line-height: 28px;
+    margin-left: 9px;
+    margin-bottom: -8px;
+}
+
+.detail_wrap .top,
+.detail_wrap .center,
+.detail_wrap .bottom {
+    /* margin-top: 38px; */
+    margin-bottom: 70px;
+}
+
+.detail_wrap .top .top_box,
+.detail_wrap .center .center_box,
+.detail_wrap .bottom .bottom_box {
+    background: #FFFFFF;
+    border-radius: 6px;
+}
+
+.detail_wrap .top .top_box {
+    display: flex;
+    padding: 31px 0;
+    min-height: 318px;
+}
+
+.detail_wrap .top .top_box>div {
+    flex: 1;
+    box-sizing: border-box;
+    padding: 0 24px;
+}
+
+.detail_wrap .top .top_box>div:first-child {
+    border-right: 2px solid #F4F4F4;
+}
+
+.detail_wrap .top .top_box>div>.title {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+.detail_wrap .top .top_box>div>.title p {
+    display: flex;
+    align-items: center;
+}
+
+.detail_wrap .top .top_box>div>.title p em {
+    color: #6F6F6F;
+}
+
+.detail_wrap .top .top_box>div>.title p span {
+    font-weight: bold;
+    color: #FF2121;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: -8px
+}
+
+.detail_wrap .top .top_box>div>.title div a {
+    font-size: 14px;
+    color: #0177E3;
+    line-height: 19px;
+    margin-left: 24px;
+}
+
+.detail_wrap .top .top_box>div>.title div a i {
+    font-weight: bolder;
+}
+
+
+.detail_wrap .top .top_box>div>.info input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.detail_wrap .top .top_box>div>.info input::-webkit-input-placeholder {
+    color: #CECECE;
+}
+
+
+.detail_wrap .top .top_box>div>.info form .view_address {
+    padding-right: 0.9rem;
+    display: flex;
+    justify-content: end;
+    margin-top: 18px;
+}
+
+.detail_wrap .top .top_box>div>.info form .view_address button {
+    border: 1px solid #D80E19;
+    color: #D80E19;
+    padding: 0.45rem 1.5rem;
+}
+
+.detail_wrap .top .top_box>div>.info form .view_address button:last-child {
+    background-color: #D80E19;
+    margin-left: 12px;
+    color: #FFF
+}
+
+.detail_wrap .top .top_box>div>.info .send_wrap,
+.detail_wrap .top .top_box>div>.info .receive_wrap {
+    display: none;
+}
+
+
+.detail_wrap .center .center_box {
+    padding: 31px 24px;
+    box-sizing: border-box;
+}
+
+.detail_wrap .center .center_box .type {
+    display: flex;
+    align-items: center;
+    margin-bottom: 33px;
+}
+
+.detail_wrap .center .center_box .type li {
+    float: left;
+    display: flex;
+    align-items: center;
+    height: 38px;
+    padding: 0 20px;
+    border-radius: 2px;
+    background: #F5F5F5;
+    margin-right: 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.detail_wrap .center .center_box .type .active-li {
+    border: 1px solid #0177E3;
+    padding: 0 19px;
+}
+
+.detail_wrap .center .center_box input {
+    width: 310px;
+}
+
+.detail_wrap .center .center_box .weight .form-control {
+    border-right-width: 0;
+}
+
+.detail_wrap .center .center_box .weight .input-group-text {
+    background-color: transparent;
+    color: #999999;
+}
+
+.detail_wrap .center .center_box .weight .limit {
+    color: #999999;
+    margin-left: 18px;
+}
+
+.detail_wrap .center .center_box .suggest {
+    background: #FCF3EA;
+    border-radius: 2px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    font-size: 12px;
+    color: #F17236;
+    margin-top: 35px;
+}
+
+.detail_wrap .bottom .bottom_box {
+    padding: 42px 60px
+}
+
+.detail_wrap .bottom .bottom_box .company {
+    padding-bottom: 43px;
+
+    border-bottom: 1px dotted #979797;
+}
+
+.detail_wrap .bottom .bottom_box .company ul li {
+    float: left;
+    margin-right: 43px;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 58px;
+    width: 58px;
+}
+
+.detail_wrap .bottom .bottom_box .company ul .active-express {
+    border: 1px solid #0E67FF;
+}
+
+.detail_wrap .bottom .bottom_box .company p {
+    margin-top: 16px;
+    font-weight: 400;
+    color: #999999;
+    line-height: 18px;
+    font-size: 14px;
+}
+
+.detail_wrap .bottom .bottom_box .money h4 {
+    margin-top: 38px;
+    font-size: 24px;
+    color: #333333;
+    line-height: 33px;
+    margin-bottom: 20px;
+}
+
+.detail_wrap .bottom .bottom_box .money .table {
+    text-align: center;
+    color: #666666;
+    font-size: 18px;
+}
+
+.detail_wrap .bottom .bottom_box .money .table tbody:last-child tr td:last-of-type {
+    /* color: #0E67FF; */
+}
+
+.detail_wrap .bottom .bottom_box .pay {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333333;
+    margin-top: 50px;
+}
+
+.detail_wrap .bottom .bottom_box .pay .form-check {
+    display: flex;
+    align-items: flex-end;
+}
+
+.detail_wrap .bottom .bottom_box .pay .form-check-input {
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    border: 1px solid #9E9E9E;
+    bottom: 4px;
+}
+
+.detail_wrap .bottom .bottom_box .pay .form-check-label em {
+    color: #0E67FF;
+}
+
+.detail_wrap .bottom .bottom_box .pay .form-check-a {
+    width: 245px;
+    height: 85px;
+    display: inline-block;
+    background: #D80E19;
+    border-radius: 4px;
+    font-size: 32px;
+    font-weight: 500;
+    color: #FFFFFF;
+    line-height: 85px;
+    text-align: center;
+    margin-left: 24px;
+}
