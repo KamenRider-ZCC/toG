@@ -1,13 +1,3 @@
-/* 轮播图 */
-.banner_wrap {
-    height: 652px;
-}
-
-.banner_wrap img {
-    width: 100%;
-    height: 100%;
-}
-
 /* 搜索框 */
 .session_in {
     position: relative;
