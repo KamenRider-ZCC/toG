@@ -493,6 +493,12 @@
     // 初始化表单验证
     $(document).ready(function () {
         formValidator()
+        $(".case_list").on('click', '.case', function () {
+            window.location.href = "./caseDetail.html";
+        })
+        $(".designer_list").on('click', '.designer', function () {
+            window.location.href = "./designerDetails.html";
+        })
     })
 
     // 提交表单

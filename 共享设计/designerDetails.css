@@ -175,6 +175,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 25px;
+    cursor: pointer;
 }
 
 .case_list .case img {
@@ -229,6 +230,7 @@
     margin-top: 25px;
     padding: 10px 25px;
     position: relative;
+    cursor: pointer;
 }
 
 .designer_list .designer .name {

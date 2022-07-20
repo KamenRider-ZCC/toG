@@ -1,0 +1,159 @@
+.card_container {
+    background-color: #F5F5F5;
+    padding: 38px 0;
+}
+
+.storage_breadcrumb {
+    margin-bottom: 12px;
+}
+
+.case_header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.case_header_left {
+    flex: 1;
+    background: #FFFFFF;
+    border-radius: 6px;
+    padding: 25px 0px 25px 36px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 18px;
+    font-family: MicrosoftYaHei;
+    color: #BBBBBB;
+}
+
+.case_header_left .title {
+    font-size: 36px;
+    font-family: MicrosoftYaHei;
+    color: #333333;
+}
+
+.case_header_right {
+    display: flex;
+    padding: 33px 25px 33px 15px;
+    box-sizing: border-box;
+    width: 390px;
+    height: 165px;
+    background: #FFFFFF;
+    border-radius: 6px;
+    margin-left: 15px;
+}
+
+.case_header_right img {
+    width: 98px;
+    height: 98px;
+    margin-right: 19px;
+    border-radius: 50%;
+}
+
+.case_header_right .service_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 234px;
+    box-sizing: border-box;
+}
+
+.case_header_right .service_info .name {
+    font-size: 18px;
+    font-family: MicrosoftYaHei-Bold, MicrosoftYaHei;
+    font-weight: bold;
+    color: #333333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.case_header_right .service_info .info {
+    font-size: 14px;
+    font-family: MicrosoftYaHei;
+    color: #666666;
+}
+
+.case_header_right .service_info .info b {
+    font-weight: bold;
+}
+
+.design_btn {
+    width: 98px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    background: #D80E19;
+    border-radius: 4px;
+    border: 1px solid #D80E19;
+    font-size: 14px;
+    font-family: MicrosoftYaHei;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.case_body {
+    width: 100%;
+    padding: 80px 95px 0px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border-radius: 6px;
+    margin-top: 15px;
+}
+
+.case_body img {
+    width: 100%;
+    height: 615px;
+}
+
+.case_body .info {
+    font-size: 20px;
+    font-family: MicrosoftYaHei;
+    color: #333333;
+    margin-top: 66px;
+}
+
+.case_body #like {
+    width: 146px;
+    height: 96px;
+    background: #D80E19;
+    border-radius: 51px;
+    margin: 100px auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: MicrosoftYaHei;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.case_body #like #likeCount {
+    margin-top: 10px;
+}
+
+.case_footer {
+    margin-top: 78px;
+    border-top: 1px solid #BEBEBE;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 5px;
+    font-size: 18px;
+    font-family: MicrosoftYaHei;
+    color: #999999;
+}
+
+.case_footer_right {
+    display: flex;
+    align-items: center;
+}
+
+.case_footer_right .icon {
+    margin-right: 12px;
+}
+
+.modal_wrap .modal-body-form .col-form-label {
+    font-weight: bold;
+}
