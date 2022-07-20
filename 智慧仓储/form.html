@@ -233,10 +233,20 @@
                                 <input class="form-control form-flex1" id="needs_phone" name="needs_phone"
                                     data-bv-notempty="true" placeholder="请输入联系方式">
                             </div>
-                            <div class="form-item form-group">
+                            <!-- <div class="form-item form-group">
                                 <label for="needs_ability"><span>*</span>运维能力</label>
                                 <input class="form-control form-flex1" id="needs_ability" name="needs_ability"
                                     data-bv-notempty="true" placeholder="请输入能力">
+                            </div> -->
+                            <div class="form-item form-group">
+                                <label for="needs_size"><span>*</span>面积</label>
+                                <div class="input-group form-flex1">
+                                    <input class="form-control" id="needs_size" name="needs_size"
+                                        data-bv-notempty="true" placeholder="请输入面积">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">平方米</span>
+                                    </div>
+                                </div>
                             </div>
                             <div class="form-item form-group">
                                 <label for="needs_price"><span>*</span>价格</label>
@@ -245,6 +255,51 @@
                                         data-bv-notempty="true" placeholder="请输入价格">
                                     <div class="input-group-append">
                                         <span class="input-group-text">元</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item form-group">
+                                <label for="needs_city"><span>*</span>区域</label>
+                                <div class="form-flex1 form-options-two">
+                                    <select class="form-control form-flex1" id="needs_city" name="needs_city"
+                                        data-bv-notempty="true">
+                                        <option>市</option>
+                                    </select>
+                                    <select class="form-control form-flex1" id="needs_zone" name="needs_zone"
+                                        data-bv-notempty="true" style="margin-left: 18px;">
+                                        <option>区</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-item form-group">
+                                <label for="needs_Type"><span>*</span>类型</label>
+                                <select class="form-control form-flex1" id="needs_Type">
+                                    <option>全部</option>
+                                </select>
+                            </div>
+                            <div class="form-item form-group">
+                                <label for="datetimepicker1"><span>*</span>使用时间</label>
+                                <div class="form-flex1 form-options-two">
+                                    <div class="input-group date form-flex1" id="datetimepicker1"
+                                        data-target-input="nearest">
+                                        <input type="text" class="form-control datetimepicker-input"
+                                            data-target="#datetimepicker1" name="datetimepicker1"
+                                            data-bv-notempty="true" />
+                                        <div class="input-group-append" data-target="#datetimepicker1"
+                                            data-toggle="datetimepicker">
+                                            <div class="input-group-text">📅</div>
+                                        </div>
+                                    </div>
+                                    至
+                                    <div class="input-group date form-flex1" id="datetimepicker2"
+                                        data-target-input="nearest">
+                                        <input type="text" class="form-control datetimepicker-input"
+                                            data-target="#datetimepicker2" name="datetimepicker2"
+                                            data-bv-notempty="true" />
+                                        <div class="input-group-append" data-target="#datetimepicker2"
+                                            data-toggle="datetimepicker">
+                                            <div class="input-group-text">📅</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -326,25 +381,25 @@
                                 </select>
                             </div>
                             <div class="form-item form-group">
-                                <label for="datetimepicker1"><span>*</span>使用时间</label>
+                                <label for="datetimepicker3"><span>*</span>使用时间</label>
                                 <div class="form-flex1 form-options-two">
-                                    <div class="input-group date form-flex1" id="datetimepicker1"
+                                    <div class="input-group date form-flex1" id="datetimepicker3"
                                         data-target-input="nearest">
                                         <input type="text" class="form-control datetimepicker-input"
-                                            data-target="#datetimepicker1" name="datetimepicker1"
+                                            data-target="#datetimepicker3" name="datetimepicker3"
                                             data-bv-notempty="true" />
-                                        <div class="input-group-append" data-target="#datetimepicker1"
+                                        <div class="input-group-append" data-target="#datetimepicker3"
                                             data-toggle="datetimepicker">
                                             <div class="input-group-text">📅</div>
                                         </div>
                                     </div>
                                     至
-                                    <div class="input-group date form-flex1" id="datetimepicker2"
+                                    <div class="input-group date form-flex1" id="datetimepicker4"
                                         data-target-input="nearest">
                                         <input type="text" class="form-control datetimepicker-input"
-                                            data-target="#datetimepicker2" name="datetimepicker2"
+                                            data-target="#datetimepicker4" name="datetimepicker4"
                                             data-bv-notempty="true" />
-                                        <div class="input-group-append" data-target="#datetimepicker2"
+                                        <div class="input-group-append" data-target="#datetimepicker4"
                                             data-toggle="datetimepicker">
                                             <div class="input-group-text">📅</div>
                                         </div>
@@ -447,6 +502,12 @@
         $('#datetimepicker2').datetimepicker({
             format: 'YYYY-MM-DD'
         });
+        $('#datetimepicker3').datetimepicker({
+            format: 'YYYY-MM-DD'
+        });
+        $('#datetimepicker4').datetimepicker({
+            format: 'YYYY-MM-DD'
+        });
     })
     // 初始化表单验证
     $(document).ready(function () {
@@ -524,6 +585,15 @@
                         },
                     }
                 },
+                // 面积
+                needs_size: {
+                    message: '面积验证失败',
+                    validators: {
+                        notEmpty: {
+                            message: '面积不能为空'
+                        },
+                    }
+                },
                 // 运维能力
                 needs_ability: {
                     message: '运维能力验证失败',
@@ -542,6 +612,51 @@
                         },
                     }
                 },
+                // 市
+                needs_city: {
+                    message: '市验证失败',
+                    validators: {
+                        notEmpty: {
+                            message: '市不能为空'
+                        },
+                    }
+                },
+                // 区
+                needs_zone: {
+                    message: '区验证失败',
+                    validators: {
+                        notEmpty: {
+                            message: '区不能为空'
+                        },
+                    }
+                },
+                // 类型
+                needs_Type: {
+                    message: '类型验证失败',
+                    validators: {
+                        notEmpty: {
+                            message: '类型不能为空'
+                        },
+                    }
+                },
+                // 使用时间
+                datetimepicker1: {
+                    message: '开始时间验证失败',
+                    validators: {
+                        notEmpty: {
+                            message: '开始时间不能为空'
+                        },
+                    }
+                },
+                // 使用时间
+                datetimepicker2: {
+                    message: '结束时间验证失败',
+                    validators: {
+                        notEmpty: {
+                            message: '结束时间不能为空'
+                        },
+                    }
+                }
             }
         })
     }
@@ -646,7 +761,7 @@
                     }
                 },
                 // 使用时间
-                datetimepicker1: {
+                datetimepicker3: {
                     message: '开始时间验证失败',
                     validators: {
                         notEmpty: {
@@ -655,7 +770,7 @@
                     }
                 },
                 // 使用时间
-                datetimepicker2: {
+                datetimepicker4: {
                     message: '结束时间验证失败',
                     validators: {
                         notEmpty: {

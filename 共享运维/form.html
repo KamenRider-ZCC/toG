@@ -239,6 +239,12 @@
                                     data-bv-notempty="true" placeholder="请输入能力">
                             </div>
                             <div class="form-item form-group">
+                                <label for="serviceType"><span>*</span>设备类型</label>
+                                <select class="form-control form-flex1" id="serviceType">
+                                    <option>全部</option>
+                                </select>
+                            </div>
+                            <div class="form-item form-group">
                                 <label for="needs_price"><span>*</span>价格</label>
                                 <div class="input-group form-flex1">
                                     <input class="form-control" id="needs_price" name="needs_price"
@@ -281,7 +287,7 @@
                                 <input class="form-control form-flex1" id="phone" name="phone" data-bv-notempty="true"
                                     placeholder="请输入联系方式">
                             </div>
-                            <div class="form-item form-group">
+                            <!-- <div class="form-item form-group">
                                 <label for="size"><span>*</span>面积</label>
                                 <div class="input-group form-flex1">
                                     <input class="form-control" id="size" name="size" data-bv-notempty="true"
@@ -290,6 +296,11 @@
                                         <span class="input-group-text">平方米</span>
                                     </div>
                                 </div>
+                            </div> -->
+                            <div class="form-item form-group">
+                                <label for="ability"><span>*</span>运维能力</label>
+                                <input class="form-control form-flex1" id="ability" name="ability"
+                                    data-bv-notempty="true" placeholder="请输入能力">
                             </div>
                             <div class="form-item form-group">
                                 <label for="price"><span>*</span>价格</label>
@@ -301,7 +312,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-item form-group">
+                            <!-- <div class="form-item form-group">
                                 <label for="city"><span>*</span>区域</label>
                                 <div class="form-flex1 form-options-two">
                                     <select class="form-control form-flex1" id="city" name="city"
@@ -350,7 +361,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="form-item form-group">
                                 <label for="remark"><span></span>备注</label>
                                 <textarea class="form-control form-flex1" id="remark" placeholder="请输入备注"
@@ -533,6 +544,15 @@
                         },
                     }
                 },
+                // 类型
+                serviceType: {
+                    message: '类型验证失败',
+                    validators: {
+                        notEmpty: {
+                            message: '类型不能为空'
+                        },
+                    }
+                },
                 // 价格
                 needs_price: {
                     message: '价格验证失败',
@@ -588,6 +608,15 @@
                     validators: {
                         notEmpty: {
                             message: '联系方式不能为空'
+                        },
+                    }
+                },
+                // 运维能力
+                ability: {
+                    message: '运维能力验证失败',
+                    validators: {
+                        notEmpty: {
+                            message: '运维能力不能为空'
                         },
                     }
                 },
