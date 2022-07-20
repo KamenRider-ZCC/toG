@@ -125,6 +125,8 @@
 
 .business_card .info_item .company {
     color: #1079B9;
+    display: inline-block;
+    margin-right: 15px;
 }
 
 .personal_profile {
@@ -260,4 +262,13 @@
 /* 找他设计 */
 .modal_wrap .modal-body-form .col-form-label {
     font-weight: bold;
+}
+
+/* 地图 */
+#map {
+    height: 500px;
+}
+
+#map .anchorBL {
+    display: none;
 }
