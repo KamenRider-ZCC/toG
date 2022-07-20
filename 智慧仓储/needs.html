@@ -250,17 +250,17 @@
                     </div>
                 </div>
                 <div class="demand_btn">
-                    <div class="serve_btn" data-toggle="modal" data-target="#staticBackdrop">意愿提交</div>
+                    <div class="serve_btn" data-toggle="modal" data-target="#serviceModal">意愿提交</div>
                 </div>
             </div>
         </div>
         <div class="modal_wrap">
-            <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
-                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal fade" id="serviceModal" data-backdrop="static" data-keyboard="false" tabindex="-1"
+                aria-labelledby="serviceModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="staticBackdropLabel">数字营销服务</h5>
+                            <h5 class="modal-title" id="serviceModalLabel">意愿提交</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -276,23 +276,24 @@
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="phone" class="col-2 col-form-label"><span></span>联系方式</label>
+                                        <label for="phone" class="col-2 col-form-label"><span>*</span>联系方式</label>
                                         <div class="col-8">
-                                            <input type="text" class="form-control" id="phone" placeholder="请输入您的联系方式">
+                                            <input type="text" class="form-control" id="phone" name="phone"
+                                                data-bv-notempty="true" placeholder="请输入您的联系方式">
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="company" class="col-2 col-form-label"><span></span>公司名称</label>
+                                        <label for="company" class="col-2 col-form-label"><span>*</span>公司名称</label>
                                         <div class="col-8">
-                                            <input type="text" class="form-control" id="company"
-                                                placeholder="请输入您的公司名称">
+                                            <input type="text" class="form-control" id="company" name="company"
+                                                data-bv-notempty="true" placeholder="请输入您的公司名称">
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="info" class="col-2 col-form-label"><span></span>公司简介</label>
+                                        <label for="info" class="col-2 col-form-label"><span></span>描述</label>
                                         <div class="col-8">
-                                            <textarea class="form-control" id="info" rows="3"
-                                                placeholder="请输入您的公司简介"></textarea>
+                                            <textarea class="form-control" id="info" name="info" rows="3"
+                                                placeholder="请输入描述"></textarea>
                                         </div>
                                     </div>
                                 </form>
@@ -414,6 +415,33 @@
                     validators: {
                         notEmpty: {
                             message: '姓名不能为空'
+                        },
+                    }
+                },
+                // 联系方式
+                phone: {
+                    message: '联系方式验证失败',
+                    validators: {
+                        notEmpty: {
+                            message: '联系方式不能为空'
+                        },
+                    }
+                },
+                // 公司名称
+                company: {
+                    message: '公司名称验证失败',
+                    validators: {
+                        notEmpty: {
+                            message: '公司名称不能为空'
+                        },
+                    }
+                },
+                // 描述
+                info: {
+                    validators: {
+                        stringLength: {
+                            max: 200,
+                            message: '描述长度不能超过200位'
                         },
                     }
                 },

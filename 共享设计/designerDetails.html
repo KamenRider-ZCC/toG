@@ -405,7 +405,7 @@
                                     <div class="form-group row">
                                         <label for="info" class="col-2 col-form-label"><span></span>描述</label>
                                         <div class="col-8">
-                                            <textarea class="form-control" id="info" rows="3"
+                                            <textarea class="form-control" id="info" name="info" rows="3"
                                                 placeholder="请输入您的描述"></textarea>
                                         </div>
                                     </div>
@@ -552,6 +552,15 @@
                     validators: {
                         notEmpty: {
                             message: '公司名称不能为空'
+                        },
+                    }
+                },
+                // 描述
+                info: {
+                    validators: {
+                        stringLength: {
+                            max: 200,
+                            message: '描述长度不能超过200位'
                         },
                     }
                 },

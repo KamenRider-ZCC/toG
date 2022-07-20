@@ -49,6 +49,7 @@
     height: 98px;
     margin-right: 19px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .case_header_right .service_info {
